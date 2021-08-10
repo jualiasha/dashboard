@@ -1,0 +1,54 @@
+.overview-box {
+	margin: 0 2vw 4vh 0;
+	@extend %box;
+	&__heading {
+		font-weight: 500;
+		margin-bottom: 6vh;
+
+		background: $pinkLinear;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.numbers {
+	margin-top: 4vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__overview-box {
+		@extend %box;
+		flex: 1 0 20vw;
+		margin: 1vw;
+		padding: 1vw;
+		&__heading {
+			font-weight: 500;
+			margin-bottom: 6vh;
+			text-align: center;
+		}
+		&:nth-child(1n + 1) {
+			.numbers__overview-box__heading {
+				@include gradheading($greenLinear);
+			}
+		}
+		&:nth-child(2n + 2) {
+			.numbers__overview-box__heading {
+				@include gradheading($orangeLinear);
+			}
+		}
+
+		&:nth-child(3n + 3) {
+			.numbers__overview-box__heading {
+				@include gradheading($pinkLinear);
+			}
+		}
+		&__span {
+			font-size: 2.5rem;
+			color: $white;
+			display: inherit;
+			text-align: center;
+		}
+	}
+}

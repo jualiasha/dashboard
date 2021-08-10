@@ -1,0 +1,53 @@
+.api-list {
+	&__p {
+		margin-bottom: 4vh;
+	}
+	&__addbutton {
+		color: $golden;
+		font-family: $ibmplexmono;
+		margin-bottom: 4vh;
+		font-weight: 400;
+	}
+	&__single-api {
+		@extend %box;
+
+		padding: 4vh;
+
+		position: relative;
+
+		&__section-buttons {
+			position: absolute;
+			right: 0;
+
+			&__button {
+				margin-right: 2vw;
+				color: $snowwhite;
+			}
+		}
+
+		&__address {
+			margin-bottom: 4vh;
+			display: inline-block;
+
+			&--aquagreen {
+				color: $aquagreen;
+			}
+			&--lavender {
+				color: $lavender;
+			}
+			&--dazzlerose {
+				color: $dazzlerose;
+			}
+			&__icon {
+				margin-top: 0.4vh;
+			}
+		}
+
+		&__list {
+			&__item {
+				margin-bottom: 4vh;
+				margin-left: 2vw;
+			}
+		}
+	}
+}

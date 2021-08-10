@@ -1,0 +1,63 @@
+.intellect {
+	&__p {
+		margin-bottom: 4vh;
+	}
+
+	&__question {
+		margin-bottom: 2vh;
+		padding: 6vh 12vw 6vh 2vw;
+		border: 1px solid $aquagreen;
+		border-radius: $borderRadius;
+		-webkit-border-radius: $borderRadius;
+		-moz-border-radius: $borderRadius;
+		-ms-border-radius: $borderRadius;
+		-o-border-radius: $borderRadius;
+		position: relative;
+
+		&__button-section {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			background-color: $aquagreen;
+			width: 4rem;
+			height: 100%;
+			border-radius: 16px;
+			-webkit-border-radius: 16px;
+			-moz-border-radius: 16px;
+			-ms-border-radius: 16px;
+			-o-border-radius: 16px;
+
+			&__edit {
+				@extend %intbuttons;
+				right: 1.5vw;
+				bottom: 9vh;
+			}
+			&__delete {
+				@extend %intbuttons;
+				right: 1.5vw;
+				bottom: 1vh;
+			}
+		}
+	}
+}
+
+%intbuttons {
+	position: absolute;
+	color: $snowwhite;
+}
+
+#transition-modal-title {
+	margin-bottom: 2vh;
+}
+
+.MuiInput-underline:before {
+	border-bottom: 1px solid $aquagreen !important;
+}
+
+.MuiSelect-icon {
+	color: $golden !important;
+}
+
+.MuiChip-label {
+	font-family: $ibmplexmono;
+}
